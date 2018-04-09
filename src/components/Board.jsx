@@ -32,9 +32,9 @@ class Board extends Component {
         const winner = this.props.calculateWinner(this.state.squares);
         let status;
         if (winner) {
-            status = 'Winner' + winner;
+            status = 'The Winner is ' + winner;
         } else {
-            status = 'Next Player' + (this.state.xIsNext ? 'X' : 'O');
+            status = 'Next Player: ' + (this.state.xIsNext ? 'X' : 'O');
         }
         return (
             <div>
