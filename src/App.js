@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Board from './components/Board';
+import Button from './components/Button';
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
         <h1>Tic-Tac-Toe</h1>
         <div className="game-board">
           <Board calculateWinner={this.calculateWinner} />
+          <Button />
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
