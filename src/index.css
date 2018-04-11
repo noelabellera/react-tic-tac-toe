@@ -22,7 +22,7 @@ ol, ul {
 
 .square {
   background: #fff;
-  border: 1px solid #999;
+  border: 2px solid #999;
   float: left;
   font-size: 50px;
   font-weight: bold;
@@ -34,6 +34,7 @@ ol, ul {
   text-align: center;
   width: 75px;
   font-family: 'Press Start 2P', cursive;
+  background-color: #ADADAD;
 }
 
 .square:focus {

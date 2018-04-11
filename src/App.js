@@ -3,6 +3,15 @@ import Board from './components/Board';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      history: [{
+        squares: Array(9).fill(null),
+      }],
+      xIsNext: true,
+    }
+  }
 
   calculateWinner = (squares) => {
     const lines = [
