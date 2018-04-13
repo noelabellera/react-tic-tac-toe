@@ -34,13 +34,23 @@ class App extends Component {
     return null;
   }
 
+  handleReset = () => {
+    console.log('this is reset');
+    this.setState({
+      history: [{
+        squares: Array(9).fill(null),
+      }],
+      xIsNext: true,
+    })
+  }
+
   render() {
     return (
       <div className="game">
         <h1>Tic-Tac-Toe</h1>
         <div className="game-board">
           <Board calculateWinner={this.calculateWinner} />
-          <Button />
+          <Button handleReset={this.handleReset} />
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
