@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Square from './Square';
+import Button from './Button';
 
 class Board extends Component {
     constructor(props) {
@@ -53,6 +54,9 @@ class Board extends Component {
                     {this.renderSquare(6)}
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
+                </div>
+                <div className="ResetBtn">
+                    <Button handleReset={this.props.handleReset} />
                 </div>
             </div>
         );

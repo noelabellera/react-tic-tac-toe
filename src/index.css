@@ -55,3 +55,23 @@ ol, ul {
 .game-info {
   margin-left: 20px;
 }
+
+.ResetBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+button {
+  height: 25px;
+  width: 85px;
+  color: white;
+  background-color: dodgerblue;
+}
+
+button:hover {
+  background-color: tomato;
+  transition: .35s;
+  transform: scale(1.3);
+}

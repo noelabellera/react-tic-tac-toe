@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Board from './components/Board';
-import Button from './components/Button';
 
 
 class App extends Component {
@@ -37,9 +36,7 @@ class App extends Component {
   handleReset = () => {
     console.log('this is reset');
     this.setState({
-      history: [{
-        squares: Array(9).fill(null),
-      }],
+      squares: Array(9).fill(null),
       xIsNext: true,
     })
   }
@@ -49,8 +46,8 @@ class App extends Component {
       <div className="game">
         <h1>Tic-Tac-Toe</h1>
         <div className="game-board">
-          <Board calculateWinner={this.calculateWinner} />
-          <Button handleReset={this.handleReset} />
+          <Board calculateWinner={this.calculateWinner} 
+                 handleReset={this.handleReset} />
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
