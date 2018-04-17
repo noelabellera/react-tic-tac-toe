@@ -35,10 +35,11 @@ class App extends Component {
 
   handleReset = () => {
     console.log('this is reset');
-    this.setState({
-      squares: Array(9).fill(null),
-      xIsNext: true,
-    })
+    window.location.reload();
+    // this.setState({
+    //   squares: Array(9).fill(null),
+    //   xIsNext: true,
+    // })
   }
 
   render() {
