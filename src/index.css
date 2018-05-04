@@ -34,7 +34,8 @@ ol, ul {
   text-align: center;
   width: 75px;
   font-family: 'Press Start 2P', cursive;
-  background-color: #ADADAD;
+  /* background-color: #ADADAD; */
+  background-color: lightgray;
 }
 
 .square:focus {
@@ -71,6 +72,10 @@ button {
 }
 
 button:hover {
+  background-color: lightgreen;
+  transition: .25s;
+}
+.square:hover {
   background-color: tomato;
   transition: .35s;
 }
